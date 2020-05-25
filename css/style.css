@@ -1,0 +1,890 @@
+/* ---------------------------
+- Tags gerais
+-----------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", 'Times New Roman';
+}
+
+
+
+/* ---------------------------
+- Footer Desktop
+-----------------------------*/
+footer {
+    color: #FFFFFF;
+    font-family: 'Bebas Neue', cursive;
+    background-image: url("../img/fundos_bordas/borda_rodape.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: -100px;
+    height: 200px;
+}
+
+.footer_container_itens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin-top: 90px;
+}
+
+.icons_footer {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.icons_footer img {
+    height: 40px;
+}
+
+
+
+/* ---------------------------
+- Menu Desktop
+-----------------------------*/
+.menu {
+    display: none;
+}
+
+
+
+/* ---------------------------
+- Home Desktop
+-----------------------------*/
+.header_home {
+    width: 100%;
+    height: 200px;
+    background-image: url("../img/fundos_bordas/borda_header_home.png");
+    background-position-y: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    position: relative;
+}
+
+/* segura menu home desktop */
+.btn_menu {
+    height: 25px;
+    width: 35px;
+    margin-right: 60px;
+    margin-top: -125px;
+}
+
+.btn_menu img {
+    height: 25px;
+    width: 35px;
+}
+
+
+/* Logo home desktop */
+#segura_logo {
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+.mob-none {
+    display: flex;
+}
+
+.desk-none {
+    display: none;
+}
+
+#logo {
+    width: 180px;
+    height: 180px;
+}
+
+#logo img {
+    width: 100%;
+}
+
+/* Video desktop */
+#container_video {
+    width: 100%;
+    margin-top: -140px;
+    z-index: -10;
+}
+
+#container_video video {
+    width: 100%;
+}
+
+/* bordas home desktop*/
+#borda_central_superior {
+    height: 90px;
+    position: relative;
+    margin-top: -60px;
+    background-image: url("../img/fundos_bordas/borda_horizontal_inferior.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    z-index: 100;
+}
+
+#borda_central_inferior {
+    height: 160px;
+
+    background-image: url("../img/fundos_bordas/borda_horizonal_superior_home.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    margin-top: -2px;
+    position: relative;
+    z-index: 99;
+}
+
+/*home infos desktop*/
+#home_inicio_tudo, #home_sob_festival {
+    background-image: url("../img/fundos_bordas/fundo_cinza.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+
+#home_inicio_tudo {
+    padding-top: 80px;
+    margin-top: -84px;
+    z-index: -99;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.home_tit_inicio_tudo {
+    height: 150px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_tit_inicio_tudo h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    line-height: 1;
+    padding: 55px 30px;
+    color: #242663;
+    width: 60%;
+    background-image: url('../img/fundos_bordas/fundo_titulo_v1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+}
+
+.home_txt_inicio_tudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    min-height: 600px;   
+}
+
+.icon_btn_home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    order: 1;
+}
+
+.icon_btn_home img{
+    height: 290px;
+}
+
+.icon_btn_home a {
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    font-weight: normal;
+    background-color: #43306B;
+    height: 45px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+    margin-top: -40px;
+}
+
+.icon_btn_home a p {
+    font-family: 'Bebas Neue', cursive;
+    padding: 0;
+    font-size: 18px;
+}
+
+.fundo_txt_ini_tudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 450px;
+    background-image: url('../img/fundos_bordas/home_fundo_texto.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    order: 2;
+}
+
+.fundo_txt_ini_tudo  p {
+    width: 70%;
+    text-align: center;
+    color: #242663;
+}
+
+.home_tit_inicio_tudo a{
+    margin: 20px 0;    
+}
+
+.home_tit_inicio_tudo a p {
+    font-size: 18px;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    height: 45px;
+    width: 150px;
+    background-color: #43306B;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+}
+
+#home_sob_festival {
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home_sob_festival img {
+    position: relative;
+    width: 770px;
+    margin-left: -100px;
+    margin-bottom: -128px;
+}
+
+#home_sob_festival h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px; 
+    color: #242663;
+    line-height: 1;
+    padding: 61px 30px;
+    background-image: url("../img/fundos_bordas/fundo_titulo_v2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 0;
+    margin-top: -200px;
+}
+
+.txt_teste p {
+    font-style: italic;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 5px rgba(2, 0, 0, 1);
+    margin-top: -10px;
+} 
+
+#home_sob_festival a {
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    color: #FFFFFF;
+    font-weight: normal;
+    text-decoration: none;
+    margin-bottom: 70px;
+    height: 45px;
+    width: 150px;
+    background-color: #43306B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/************************************
+* DESKTOP MENOR
+************************************/
+@media (min-width: 1025px) and (max-width: 1400px) {
+    /* ---------------------------
+    - Home Desktop Menor
+    -----------------------------*/
+    .header_home {
+        height: 150px;
+    }
+
+    #segura_logo {
+        margin-top: 0;
+    }
+
+    .btn_menu {
+        margin-top: -80px;
+    }
+
+    #logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    #borda_central_superior {
+        height: 70px;
+        margin-top: -68px;
+    }
+
+    #borda_central_inferior {
+        height: 120px;
+    }
+
+    .home_tit_inicio_tudo {
+        padding-top: 60px;
+    }
+
+    .home_tit_inicio_tudo h2{
+        font-size: 60px;
+    }
+
+    .home_txt_inicio_tudo {
+        min-height: 550px;
+    }
+
+    .icon_btn_home img{
+        height: 265px;
+    }
+
+    .fundo_txt_ini_tudo{
+        width: 55%;
+    }
+
+    #home_sob_festival img {
+        width: 533px;
+        margin-left: -122px;
+        margin-bottom: -58px;
+    }
+
+    #home_sob_festival h2{
+        font-size: 60px;
+    }
+
+    #home_sob_festival a {
+        margin-bottom: 15px;
+    }
+
+    .icons_footer {
+        width: 50%;
+    }
+}
+
+
+
+/************************************
+* CSS TABLET
+************************************/
+
+/* 
+    ##Device = Tablets, Ipads
+    ##Screen = B/w 768px to 1024px
+*/
+
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* ---------------------------
+    - Home Tablet
+    -----------------------------*/
+    .header_home {
+        height: 110px;
+        background-image: url("../img/fundos_bordas/borda_header_home_mobile.png");
+    }
+
+    .btn_menu {
+        margin-top: -50px;
+    }
+
+    .mob-none {
+        display: none;
+    }
+
+    .desk-none {
+        display: flex;
+    }
+
+    #logo {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 28px;
+    }
+
+    #container_video {
+        margin-top: -48px;
+    }
+
+    #borda_central_superior {
+        height: 70px;
+        margin-top: -68px;
+    }
+
+    #borda_central_inferior {
+        height: 120px;
+    }
+
+    .home_tit_inicio_tudo {
+        padding-top: 60px;
+        width: 70%;
+    }
+
+    .home_tit_inicio_tudo h2{
+        font-size: 60px;
+    }
+
+    .home_txt_inicio_tudo {
+        min-height: 550px;
+        flex-direction: column;
+    }
+
+    .icon_btn_home {
+        order: 2;
+    }
+
+    .icon_btn_home img{
+        height: 265px;
+    }
+
+    .fundo_txt_ini_tudo{
+        width: 100%;
+        order: 1;
+
+    }
+
+    #home_sob_festival img {
+        width: 533px;
+        margin-left: -122px;
+        margin-bottom: -58px;
+    }
+
+    #home_sob_festival h2{
+        font-size: 60px;
+    }
+
+    #home_sob_festival a {
+        margin-bottom: 15px;
+    }
+
+
+
+    /* ---------------------------
+    - Footer Tablet
+    -----------------------------*/
+    .footer_container_itens {
+        width: 70%;
+    }
+
+    .icons_footer {
+        width: 50%;
+    }
+    
+}
+
+/************************************
+* CSS MOBILE
+************************************/
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+    /* ---------------------------
+    - Home Mobile
+    -----------------------------*/
+    .header_home{
+        background-image: url("../img/fundos_bordas/borda_header_home_mobile.png");
+
+        height: 110px;
+    }
+
+    .btn_menu {
+        margin-right: 30px;
+        margin-top: -20px;
+    }
+
+    #logo {
+        width: 90px;
+        height: 90px;
+        margin-top: -20px;
+        margin-left: -20px;
+    }
+
+    .mob-none {
+        display: none;
+    }
+
+    .desk-none {
+        display: flex;
+    }
+
+    #borda_central_superior{
+        height: 68px;
+        background-image: url("../img/fundos_bordas/borda_horizontal_inferior_home_mobile.png");
+    }
+
+    #borda_central_inferior {
+        height: 80px;
+        background-image: url("../img/fundos_bordas/borda_horizontal_superior_home_mobile.png");
+    }
+
+    #home_inicio_tudo, #home_sob_festival {
+        background-image: url("../img/fundos_bordas/fundo_home_mobile.jpg");
+    }
+
+    .home_tit_inicio_tudo {
+        width: 100%;
+    }
+
+    .home_tit_inicio_tudo h2{
+        font-size: 43px;
+    }
+
+    .home_txt_inicio_tudo{
+        flex-direction: column;
+    }
+
+    .fundo_txt_ini_tudo {
+        width: 100%;
+        order: 1;
+        padding: 15px;
+
+        height: 343px;
+    }
+
+    .icon_btn_home {
+        order: 2;
+
+        margin-bottom: 20px;
+    }
+
+    #home_sob_festival {
+        min-height: 500px;
+    }
+
+    #home_sob_festival h2 {
+        font-size: 43px;
+        margin-left: 25px;
+    }
+
+    #home_sob_festival img {
+        width: 389px;
+        margin-left: -64px;
+        margin-bottom: -9px;
+    }
+
+    #home_sob_festival a {
+        margin-bottom: 15px;
+    }
+
+
+
+    /* ---------------------------
+    - Footer Mobile
+    -----------------------------*/
+    footer {
+        height: 160px;
+    }
+
+    .icons_footer {
+        width: 85%;
+    }
+
+    .footer_container_itens {
+        margin-top: 60px;
+    }
+    
+}
+  
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+    /* ---------------------------
+    - Home Mobile
+    -----------------------------*/
+    .header_home{
+        background-image: url("../img/fundos_bordas/borda_header_home_mobile.png");
+        height: 100px;
+    }
+
+    .btn_menu {
+        margin-right: 30px;
+        margin-top: -20px;
+    }
+
+    #logo {
+        width: 90px;
+        height: 90px;
+        margin-top: -20px;
+        margin-left: -20px;
+    }
+
+    .mob-none {
+        display: none;
+    }
+
+    .desk-none {
+        display: flex;
+    }
+
+    #borda_central_superior{
+        height: 68px;
+        background-image: url("../img/fundos_bordas/borda_horizontal_inferior_home_mobile.png");
+    }
+
+    #borda_central_inferior {
+        height: 80px;
+        background-image: url("../img/fundos_bordas/borda_horizontal_superior_home_mobile.png");
+    }
+
+    #home_inicio_tudo, #home_sob_festival {
+        background-image: url("../img/fundos_bordas/fundo_home_mobile.jpg");
+    }
+
+    .home_tit_inicio_tudo {
+        width: 100%;
+        height: 80px;
+    }
+
+    .home_tit_inicio_tudo h2{
+        font-size: 26px;
+    }
+
+    .home_txt_inicio_tudo{
+        flex-direction: column;
+    }
+
+    .fundo_txt_ini_tudo {
+        width: 100%;
+        order: 1;
+        padding: 15px;
+        height: 343px;
+        background-size: contain;
+        background-image: url("../img/fundos_bordas/home_fundo_texto_mobile.png");
+    }
+
+    .fundo_txt_ini_tudo p {
+        width: 100%;
+        padding: 10px 45px;
+    }
+
+    .icon_btn_home {
+        order: 2;
+        margin-bottom: 20px;
+    }
+
+    .icon_btn_home a {
+        font-size: 18px;
+        height: 40px;
+        width: 120px;
+    }
+
+    .icon_btn_home img {
+        height: 220px;
+    }
+
+    #home_sob_festival {
+        min-height: 430px;
+    }
+
+    #home_sob_festival h2 {
+        font-size: 26px;
+        margin-left: 25px;
+        padding: 57px 23px;
+    }
+
+    #home_sob_festival img {
+        width: 253px;
+        margin-left: -36px;
+        margin-bottom: 47px;
+    }
+
+    #home_sob_festival a {
+        margin-bottom: 15px;
+        font-size: 18px;
+        height: 40px;
+        width: 120px;
+    }
+
+
+
+    /* ---------------------------
+    - Footer Mobile
+    -----------------------------*/
+    footer {
+        height: 160px;
+    }
+
+    .icons_footer {
+        width: 100%;
+    }
+
+    .footer_container_itens {
+        width: 80%;
+        margin-top: 60px;
+    }
+
+
+    
+    /* ---------------------------
+    - Lista de Reprodução Desktop
+    -----------------------------*/
+    #img_bandas_menu{
+        display: flex;
+        
+        background-image: url("../img/fundos_bordas/fundo_pixelado.jpg");
+    }
+
+    /* #img_bandas_menu img {
+        width: 100%;
+    } */
+
+    #linha_esquerda, #linha_direita {
+        width: 50%;
+    }
+
+    
+
+    #linha_direita {
+        background: coral;
+    }
+
+    .ozzy {
+        z-index: 1;
+        position: absolute;
+    }
+
+    .iron {
+        z-index: 2;
+        position: absolute;
+    }
+
+    .scorpions {
+        z-index: 3;
+        position: absolute;
+    }
+
+    .queen {
+        z-index: 4;
+        position: absolute;
+    }
+
+    .acdc {
+        z-index: 5;
+        position: absolute;
+    }
+
+
+    #playlist_geral {
+        /* define cor de fundo */
+        background-color: #43306B;
+        /* cor do texto */
+        color: #ffffff;
+        
+        /* deixa display responsivo e alinha o conteudo */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #playlist_geral h1 {
+        font-weight: normal;
+    }
+
+    #playlist_geral iframe {
+        padding: 0 0 30px 0;
+        width: 60%;
+
+        height: 500px;
+    }
+
+    /* ---------------------------
+    - Banda Detalhe Desktop
+    -----------------------------*/
+    .segura_info {
+        display: flex;
+        flex-direction: column;
+
+        background-image: url("../img/fundos_bordas/bandai_borda_inferior.png");
+        background-position-x: center;
+    }
+
+    .segura_info h1 {
+        text-align: center;
+
+        margin: 75px 0 20px 0;
+        padding: 15px;
+
+        color: #FFFFFF;
+
+        letter-spacing: 2px;
+
+        font-size: 70px;
+
+        font-weight: normal;
+    }
+
+    .segura_img_txt {
+        width: 60%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+
+        justify-content: space-around;
+
+        text-align: center;
+        align-items: center;
+
+        /* background-color: coral; */
+        padding: 0 0 30px 0;
+    }
+
+    .segura_img_txt  img {
+        width: 30%;
+        /* background-color: crimson; */
+    }
+
+    .segura_img_txt  p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        width: 50%;
+        color: #FFFFFF;
+        /* background-color: darkgrey; */
+
+        padding: 15px;
+
+        font-weight: 100;
+    }
+
+    @media (max-width: 367px) {
+        .fundo_txt_ini_tudo p {
+            background-size: cover;
+            padding: 10px;
+        }
+    }
+}

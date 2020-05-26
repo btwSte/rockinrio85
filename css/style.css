@@ -52,8 +52,77 @@ footer {
 /* ---------------------------
 - Menu Desktop
 -----------------------------*/
-.menu {
+
+
+.menu{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: rgba(67, 48, 107, 0.8);
+    top: 0;
+    right: 0;
+    z-index: 100;
+    opacity: 1;
+    overflow: auto;
+    
+    display: flex;
+    justify-content: flex-end;
+    
     display: none;
+}
+
+.links_menu {
+    height: 100%;
+    width: 40%;
+    float: right;
+    background-image: url("../img/fundos_bordas/fundo_menu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1.0;
+}
+
+.menu div a {
+    margin-top: 30px;
+}
+
+.btn_close {
+    color:#fff;
+    float: left;
+    cursor: pointer;
+    margin: 2% 0 0 50%;
+}
+
+.menu ul {
+    width: 100%;
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 102;
+    text-align: left;
+}
+
+.menu li {
+    padding: 1.5%;
+    z-index:103;
+
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.menu li a {
+    font-size: 80px;
+    padding: 1.5% 3%;
+    text-decoration: none;
+    z-index: 104;
+    color: #43306B;
+
+    font-family: 'Bebas Neue', cursive;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
 }
 
 
@@ -131,7 +200,7 @@ footer {
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: top;
-    z-index: 100;
+    z-index: 95;
 }
 
 #borda_central_inferior {
@@ -325,6 +394,13 @@ footer {
 * DESKTOP MENOR
 ************************************/
 @media (min-width: 1025px) and (max-width: 1400px) {
+    .btn_close{
+        margin: 2% 0 0 30%;
+    }
+
+    .links_menu {
+        width: 60%;
+    }
     /* ---------------------------
     - Home Desktop Menor
     -----------------------------*/
@@ -406,6 +482,17 @@ footer {
 
   
 @media (min-width: 768px) and (max-width: 1024px) {
+    .btn_close{
+        margin: 2% 0 0 30%;
+    }
+
+    .links_menu {
+        width: 60%;
+    }
+
+    .menu li a {
+        font-size: 60px;
+    }
     /* ---------------------------
     - Home Tablet
     -----------------------------*/
@@ -510,6 +597,22 @@ footer {
     ##Screen = B/w 481px to 767px
 */
 @media (min-width: 481px) and (max-width: 767px) {
+    .btn_close{
+        margin: 2% 0 0 10%;
+    }
+
+    .btn_close img {
+        height: 55px;
+        width: auto;
+    }
+
+    .links_menu {
+        width: 75%;
+    }
+
+    .menu li a {
+        font-size: 60px;
+    }
     /* ---------------------------
     - Home Mobile
     -----------------------------*/
@@ -622,6 +725,22 @@ footer {
     ##Screen = B/w 320px to 479px
 */
 @media (min-width: 320px) and (max-width: 480px) {
+    .btn_close{
+        margin: 2% 0 0 0;
+    }
+
+    .btn_close img {
+        height: 55px;
+        width: auto;
+    }
+
+    .links_menu {
+        width: 80%;
+    }
+
+    .menu li a {
+        font-size: 40px;
+    }
     /* ---------------------------
     - Home Mobile
     -----------------------------*/

@@ -6,11 +6,51 @@
 
 
     <link rel="stylesheet" href="css/style.css">
+    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
     <title>Bandas - RIR85</title>
 </head>
 <body>
+    <header>
+        <div class="header_home">
+            <!-- Logo -->
+            <div id="segura_logo">
+                <a href="index.html">
+                    <div id="logo" class="desk-none">
+                        <img src="img/logo/principal_mobile.png" alt="Logo">
+                    </div>
+                    <div id="logo" class="mob-none">
+                        <img src="img/logo/principal.png" alt="Logo">
+                    </div>
+                </a>
+            </div>
+            
+            <!-- menu -->
+            <a href="#" class="btn_menu"> 
+                <img src="img/icones/icon_menu.png" alt="Menu">
+            </a>
+            
+            <nav class="menu">
+                <div>
+                    <a class="btn_close">
+                        <img src="img/icones/icon_fechar.png" alt="Fechar" title="Fechar">
+                    </a>
+                </div>
+                
+                <div class="links_menu">
+                    <ul>
+                        <li><a href="views/paginas/ambientes_view.php">História</a></li>
+                        <li><a href="views/paginas/contato_view.php">Bandas</a></li>
+                        <li><a href="views/paginas/convenios_view.php">Curiosidades</a></li>
+                        <li><a href="views/paginas/informacoes_view.php">Galeria de Fotos</a></li>
+                        <!-- <li><a href="views/paginas/procedimentoExames_view.php">Questionário</a></li> -->
+                        <li><a href="views/paginas/sobre_view.php">Quem Somos</a></li>
+                    </ul>
+                </div>
+            </nav>   
+        </div>
+    </header>
     <main>
         <div id="img_bandas_menu">
             <div id="linha_esquerda">
@@ -62,6 +102,17 @@
             <iframe src="https://open.spotify.com/embed/playlist/1FjwyAuxCT1fMSPikYEbms" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
     </main>
-   
+
+
+   <script>
+        // Abrir e fechar menu 
+        $(".btn_menu").click(function() {
+            $(".menu").show();
+        });
+
+        $(".btn_close").click(function() {
+            $(".menu").hide();
+        });
+    </script>
 </body>
 </html>

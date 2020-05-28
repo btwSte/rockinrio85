@@ -62,10 +62,8 @@ footer {
     z-index: 100;
     opacity: 1;
     overflow: auto;
-    
     display: flex;
     justify-content: flex-end;
-    
     display: none;
 }
 
@@ -104,7 +102,6 @@ footer {
 .menu li {
     padding: 1.5%;
     z-index:103;
-
     margin-top: 20px;
     margin-left: 50px;
 }
@@ -115,7 +112,6 @@ footer {
     text-decoration: none;
     z-index: 104;
     color: #43306B;
-
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -203,7 +199,6 @@ footer {
 
 #borda_central_inferior {
     height: 160px;
-
     background-image: url("../img/fundos_bordas/borda_horizonal_superior_home.png");
     background-repeat: no-repeat;
     background-position-x: center;
@@ -282,7 +277,7 @@ footer {
     text-decoration: none;
     text-align: center;
     font-weight: normal;
-    background-color: #43306B;
+    background-color: #242663;
     height: 45px;
     width: 150px;
     display: flex;
@@ -327,7 +322,7 @@ footer {
     display: flex;
     height: 45px;
     width: 150px;
-    background-color: #43306B;
+    background-color: #242663;
     color: #FFFFFF;
     justify-content: center;
     align-items: center;
@@ -382,7 +377,7 @@ footer {
     margin-bottom: 70px;
     height: 45px;
     width: 150px;
-    background-color: #43306B;
+    background-color: #242663;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -394,7 +389,7 @@ footer {
 - Historia Desktop
 -----------------------------*/
 #main_historia {
-    background-image: url(../img/fundos_bordas/fundo_cinza.jpg);
+    background-image: url("../img/fundos_bordas/fundo_cinza.jpg");
     background-size: cover;
     margin-top: -180px;
     width: 100%;
@@ -404,7 +399,6 @@ footer {
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
-
     font-size: 20px;
 }
 
@@ -457,6 +451,82 @@ footer {
 
 
 
+/* ---------------------------
+- Curiosidades Desktop
+-----------------------------*/
+#main_curiosidades {
+    background-image: url("../img/fundos_bordas/fundo_cinza.jpg");
+    background-size: cover;
+    margin-top: -180px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.titulo_curiosidades h1{
+    margin-top: 200px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    line-height: 1;
+    padding: 55px 30px;
+    color: #242663;
+    width: 100%;
+    background-image: url('../img/fundos_bordas/fundo_titulo_v1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+}
+
+/* .icon_titulo_curiosidades {
+    position: relative;
+    margin-top: -225px;
+    width: 70%;
+    margin-left: 10px;
+} */
+
+/* .icon_titulo_curiosidades img {
+    width: 100%;
+} */
+
+.textos_curiosidades p, .textos_curiosidades h2{
+    /* text-shadow: 2px 2px 5px rgba(2, 0, 0, 1); */
+    text-shadow: 2px 2px 8px #000000;
+}
+
+.textos_curiosidades {
+    margin-top: 60px;
+    width: 70%;
+    text-align: center;
+}
+
+.textos_curiosidades h2 {
+    font-size: 25px;
+    font-weight: 100;
+    padding-bottom: 40px;
+}
+
+.textos_curiosidades p {
+    margin: 40px 0;
+}
+
+.textos_curiosidades img {
+    margin: 20px 0;
+}
+
+.img_curiosidades {
+    width: 70%;
+}
+
+.img_curiosidades img {
+    width: 100%;
+}
+
 /************************************
 * DESKTOP MENOR
 ************************************/
@@ -471,7 +541,7 @@ footer {
 
 
 
-    /* ----------------.conteudo_historia img {-----------
+    /* ---------------------------
     - Home Desktop Menor
     -----------------------------*/
     .header_home {
@@ -550,9 +620,30 @@ footer {
     .conteudo_historia img {
         width: 90%;
     }
-
+    
     .borda_historia {
         width: 90%;
+    }
+    
+    
+    
+    /* ---------------------------
+    - Curiosidades Desktop Menor
+    -----------------------------*/
+    .titulo_curiosidades h1 {
+        font-size: 60px;
+    }
+
+    #main_curiosidades{
+        font-size: 18px;
+    }
+
+    .textos_curiosidades {
+        margin-top: 0;
+    }
+
+    .img_curiosidades {
+        width: 80%;
     }
 }
 
@@ -693,6 +784,32 @@ footer {
     .borda_historia {
         width: 90%;
     }
+
+
+
+    /* ---------------------------
+    - Curiosidades Tablet
+    -----------------------------*/
+    .titulo_curiosidades h1 {
+        font-size: 60px;
+        padding: 20px;
+    }
+
+    .textos_curiosidades h2 {
+        font-size: 20px;
+    }
+
+    #main_curiosidades{
+        font-size: 18px;
+    }
+
+    .textos_curiosidades {
+        margin-top: 0;
+    }
+
+    .img_curiosidades {
+        width: 85%;
+    }
     
 }
 
@@ -779,7 +896,6 @@ footer {
         width: 100%;
         order: 1;
         padding: 15px;
-
         height: 343px;
     }
 
@@ -811,6 +927,36 @@ footer {
 
 
     /* ---------------------------
+    - Curiosidades Mobile
+    -----------------------------*/
+    .titulo_curiosidades h1 {
+        font-size: 42px;
+        padding: 20px;
+    }
+
+    .textos_curiosidades h2 {
+        font-size: 20px;
+    }
+
+    #main_curiosidades{
+        font-size: 16px;
+    }
+
+    .textos_curiosidades {
+        margin-top: 0;
+    }
+
+    .img_curiosidades, .img_curiosidades_menor {
+        width: 100%;
+    }
+    
+    .img_curiosidades img, .img_curiosidades_menor img{
+        width: 100%;
+    }
+
+
+
+    /* ---------------------------
     - Footer Mobile
     -----------------------------*/
     footer {
@@ -837,7 +983,6 @@ footer {
     .borda_historia {
         width: 95%;
     }
-    
 }
   
 /* 
@@ -967,7 +1112,6 @@ footer {
         height: 40px;
         width: 120px;
     }
-
 
 
     /* ---------------------------
@@ -1130,6 +1274,42 @@ footer {
         padding: 15px;
 
         font-weight: 100;
+    }
+
+    /* ---------------------------
+    - Curiosidades Mobile
+    -----------------------------*/
+    .titulo_curiosidades {
+        width: 90%;
+    }
+
+    .textos_curiosidades {
+        width: 90%;
+    }
+    
+    .titulo_curiosidades h1 {
+        padding: 15px 0;
+        font-size: 30px;
+    }
+
+    .textos_curiosidades h2 {
+        font-size: 18px;
+    }
+
+    #main_curiosidades{
+        font-size: 16px;
+    }
+
+    .textos_curiosidades {
+        margin-top: 0;
+    }
+
+    .img_curiosidades, .img_curiosidades_menor {
+        width: 100%;
+    }
+    
+    .img_curiosidades img, .img_curiosidades_menor img{
+        width: 100%;
     }
 
     @media (max-width: 367px) {

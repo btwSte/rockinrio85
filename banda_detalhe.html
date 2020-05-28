@@ -1,73 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes - RIR85</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="css/style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="favico/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favico/favicon-16x16.png">
+        <link rel="manifest" href="favico/site.webmanifest">
     
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-</head>
-<body>
-    <header>
-        <div class="header_home">
-            <!-- Logo -->
-            <div id="segura_logo">
-                <a href="index.html">
-                    <div id="logo" class="desk-none">
-                        <img src="img/logo/principal_mobile.png" alt="Logo">
-                    </div>
-                    <div id="logo" class="mob-none">
-                        <img src="img/logo/principal.png" alt="Logo">
-                    </div>
-                </a>
-            </div>
-            
-            <!-- menu -->
-            <a href="#" class="btn_menu"> 
-                <img src="img/icones/icon_menu.png" alt="Menu">
-            </a>
-            
-            <nav class="menu">
-                <div>
-                    <a class="btn_close">
-                        <img src="img/icones/icon_fechar.png" alt="Fechar" title="Fechar">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+        <title>Detalhes - RIR85</title>
+    </head>
+    <body>
+        <header>
+            <div class="header_home">
+                <!-- Logo -->
+                <div id="segura_logo">
+                    <a href="index.html">
+                        <div id="logo" class="desk-none">
+                            <img src="img/logo/principal_mobile.png" alt="Logo">
+                        </div>
+                        <div id="logo" class="mob-none">
+                            <img src="img/logo/principal.png" alt="Logo">
+                        </div>
                     </a>
                 </div>
                 
-                <div class="links_menu">
-                    <ul>
-                        <li><a href="historia.html">História</a></li>
-                        <li><a href="bandas.html">Bandas</a></li>
-                        <li><a href="curiosidades.html">Curiosidades</a></li>
-                        <li><a href="galeria_fotos.html">Galeria de Fotos</a></li>
-                        <li><a href="quem_somos.html">Quem Somos</a></li>
-                    </ul>
-                </div>
-            </nav>   
-        </div>
-    </header>
-    <main>
-        <div class="segura_info">
-            <h1>Queen</h1>
-            <div class="segura_img_txt">
-                <img src="img/artistas/bandai_queen.png" alt="">
-    
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed voluptatum facilis est, natus at nesciunt labore veritatis vel illum sit officia optio sequi nobis cum aperiam pariatur quisquam a tempora.</p>
+                <!-- menu -->
+                <a href="#" class="btn_menu"> 
+                    <img src="img/icones/icon_menu.png" alt="Menu">
+                </a>
+                
+                <nav class="menu">
+                    <div>
+                        <a class="btn_close">
+                            <img src="img/icones/icon_fechar.png" alt="Fechar" title="Fechar">
+                        </a>
+                    </div>
+                    
+                    <div class="links_menu">
+                        <ul>
+                            <li><a href="historia.html">História</a></li>
+                            <li><a href="bandas.html">Bandas</a></li>
+                            <li><a href="curiosidades.html">Curiosidades</a></li>
+                            <li><a href="galeria_fotos.html">Galeria de Fotos</a></li>
+                            <li><a href="quem_somos.html">Quem Somos</a></li>
+                        </ul>
+                    </div>
+                </nav>   
             </div>
-        </div>
-    </main>
+        </header>
+        <main>
+            <div class="segura_info">
+                <h1>Queen</h1>
+                <div class="segura_img_txt">
+                    <img src="img/artistas/bandai_queen.png" alt="">
+        
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed voluptatum facilis est, natus at nesciunt labore veritatis vel illum sit officia optio sequi nobis cum aperiam pariatur quisquam a tempora.</p>
+                </div>
+            </div>
+        </main>
 
-    <script>
-        // Abrir e fechar menu 
-        $(".btn_menu").click(function() {
-            $(".menu").show();
-        });
+        <script>
+            // Abrir e fechar menu 
+            $(".btn_menu").click(function() {
+                $(".menu").show();
+            });
 
-        $(".btn_close").click(function() {
-            $(".menu").hide();
-        });
-    </script>
-</body>
+            $(".btn_close").click(function() {
+                $(".menu").hide();
+            });
+        </script>
+    </body>
 </html>

@@ -190,7 +190,7 @@ footer {
     height: 90px;
     position: relative;
     margin-top: -60px;
-    background-image: url("../img/fundos_bordas/borda_horizontal_inferior.png");
+    background-image: url("../img/fundos_bordas/borda_home_inferior_video.png");
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: top;
@@ -203,7 +203,7 @@ footer {
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: bottom;
-    margin-top: -2px;
+    margin-top: -23px;
     position: relative;
     z-index: 99;
 }
@@ -722,6 +722,7 @@ footer {
 
     #borda_central_inferior {
         height: 120px;
+        margin-top: -6px;
     }
 
     .home_tit_inicio_tudo {
@@ -895,6 +896,7 @@ footer {
 
     #borda_central_inferior {
         height: 120px;
+        margin-top: -6px;
     }
 
     .home_tit_inicio_tudo {
@@ -1083,11 +1085,12 @@ footer {
 
     #borda_central_superior{
         height: 68px;
-        background-image: url("../img/fundos_bordas/borda_horizontal_inferior_home_mobile.png");
+        background-image: url("../img/fundos_bordas/borda_home_inferior_video.png");
     }
 
     #borda_central_inferior {
         height: 80px;
+        margin-top: -6px;
         background-image: url("../img/fundos_bordas/borda_horizontal_superior_home_mobile.png");
     }
 
@@ -1290,11 +1293,12 @@ footer {
 
     #borda_central_superior{
         height: 68px;
-        background-image: url("../img/fundos_bordas/borda_horizontal_inferior_home_mobile.png");
+        background-image: url("../img/fundos_bordas/borda_home_inferior_video.png");
     }
 
     #borda_central_inferior {
         height: 80px;
+        margin-top: -4px;
         background-image: url("../img/fundos_bordas/borda_horizontal_superior_home_mobile.png");
     }
 

@@ -10,6 +10,10 @@
         <link rel="manifest" href="favico/site.webmanifest">
     
         <link rel="stylesheet" href="css/style.css">
+
+        <link rel="stylesheet" href="css/simpleLightbox.min.css">
+
+        <script src="js/simpleLightbox.min.js"></script>
         
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         
@@ -54,7 +58,110 @@
                 </nav>   
             </div>
         </header>
-        <h1>Galeria de Fotos</h1>
+        <main id="main_galeria_fotos" class="espaco_footer">
+            <h1>Galeria de Fotos</h1>
+
+            <div class="imageGallery1">
+                <a href="img/artistas/01.jpg">
+                    <img src="img/artistas/01.jpg" alt="Gallery image 1" />
+                </a>
+
+                <a href="img/artistas/02.jpg">
+                    <img src="img/artistas/02.jpg" alt="Gallery image 2" />
+                </a>
+                <a href="img/artistas/03.jpg">
+                    <img src="img/artistas/03.jpg" alt="Gallery image 3" />
+                </a>
+
+                <a href="img/artistas/04.jpg">
+                    <img src="img/artistas/04.jpg" alt="Gallery image 1" />
+                </a>
+
+                <a href="img/artistas/05.jpg">
+                    <img src="img/artistas/05.jpg" alt="Gallery image 1" />
+                </a>
+
+                <a href="img/artistas/06.jpg">
+                    <img src="img/artistas/06.jpg" alt="Gallery image 1" />
+                </a>
+
+                <a href="img/artistas/07.jpg">
+                    <img src="img/artistas/07.jpg" alt="Gallery image 1" />
+                </a>
+
+                <a href="img/artistas/08.jpg">
+                    <img src="img/artistas/08.jpg" alt="Gallery image 1" />
+                </a>
+
+                <a href="img/artistas/09.jpg">
+                    <img src="img/artistas/09.jpg" alt="Gallery image 1" />
+                </a>
+
+                <a href="img/artistas/10.jpg">
+                    <img src="img/artistas/10.jpg" alt="Gallery image 1" />
+                </a>
+
+                <a href="img/artistas/11.jpg">
+                    <img src="img/artistas/11.jpg" alt="Gallery image 1" />
+                </a>
+
+                <a href="img/artistas/12.jpg">
+                    <img src="img/artistas/12.jpg" alt="Gallery image 1" />
+                </a>
+
+                <a href="img/artistas/13.jpg">
+                    <img src="img/artistas/13.jpg" alt="Gallery image 1" />
+                </a>
+
+                <a href="img/artistas/14.jpg">
+                    <img src="img/artistas/14.jpg" alt="Gallery image 1" />
+                </a>
+
+                <a href="img/artistas/15.jpg">
+                    <img src="img/artistas/15.jpg" alt="Gallery image 1" />
+                </a>
+
+                <a href="img/artistas/16.jpg">
+                    <img src="img/artistas/16.jpg" alt="Gallery image 1" />
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer_container_itens">
+                <div class="icons_footer">
+                    <div>
+                        <a href="https://facebook.com/Rock-in-Rio-85-111347620580906/">
+                            <img src="img/icones/icon_facebook.png" alt="Facebook" title="Facebook">
+                        </a>
+                    </div>
+                    
+                    <div>
+                        <a href="https://www.instagram.com/rockinrio85/">
+                            <img src="img/icones/icon_instagram.png" alt="Instagram" title="Instagram">
+                        </a>
+                    </div>
+                    
+                    <div>
+                        <a href="https://www.youtube.com/channel/UCV_TOPYxdfRU400ogDKXRpg">
+                            <img src="img/icones/icon_youtube.png" alt="Youtube" title="Youtube">
+                        </a>
+                    </div>
+                    
+                    <div>
+                        <a href="">
+                            <img src="img/icones/icon_spotify.png" alt="Spotify" title="Spotify">
+                        </a>
+                    </div>
+                    
+                    <div>
+                        <a href="quem_somos.html">
+                            <img src="img/icones/icon_coracao.png" alt="Quem Somos" title="Quem Somos">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <script>
             // Abrir e fechar menu 
@@ -65,6 +172,9 @@
             $(".btn_close").click(function() {
                 $(".menu").hide();
             });
+
+            // Lightbox
+            new SimpleLightbox({elements: '.imageGallery1 a'});
         </script>
     </body>
 </html>

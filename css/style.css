@@ -344,7 +344,8 @@ footer {
     margin-bottom: -128px;
 }
 
-#home_sob_festival h2 {font-family: 'Bebas Neue', cursive;
+#home_sob_festival h2 {
+    font-family: 'Bebas Neue', cursive;
     font-size: 80px;
     line-height: 1;
     font-family: 'Bebas Neue', cursive;
@@ -826,7 +827,7 @@ footer {
     }
 
     #main_galeria_fotos h1 {
-        font-size: 40px;
+        font-size: 60px;
     }
 }
 
@@ -938,26 +939,31 @@ footer {
         margin-bottom: 15px;
     }
 
-
-
+    
+    
+    
     /* ---------------------------
     - Footer Tablet
     -----------------------------*/
     .footer_container_itens {
         width: 70%;
     }
-
+    
     .icons_footer {
         width: 50%;
     }
-
-
-
+    
+    
+    
     /* ---------------------------
     - Historia Tablet
     -----------------------------*/
     #main_historia {
         font-size: 16px;
+    }
+    
+    #main_galeria_fotos h2{
+        font-size: 60px;
     }
 
     .conteudo_historia img {
@@ -1585,6 +1591,14 @@ footer {
         min-height: 400px;
         height: auto;
         margin: 40px 0;
+    }
+
+    #main_galeria_fotos {
+        font-size: 26px;
+    }
+
+    .imageGallery1 > a {
+        width: 50%; 
     }
 
     @media (max-width: 367px) {

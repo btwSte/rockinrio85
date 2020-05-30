@@ -637,7 +637,7 @@ footer {
 }
 
  #main_galeria_fotos h1 {
-     margin-top: 200px;
+    margin-top: 200px;
     font-family: 'Bebas Neue', cursive;
     font-size: 80px;
     line-height: 1;
@@ -679,6 +679,126 @@ footer {
     background-color: rgba(67, 48, 107, 0.8);
 }
 
+
+
+/*---------------------
+- Lista de reprodução
+---------------------*/
+.header_lista_rep {
+    width: 100%;
+    height: 200px;
+    background-image: url("../img/fundos_bordas/bg_branco_desk.jpg");
+    background-position-y: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_lista_rep #logo img{
+    width: 150px;
+    height: 150px;
+}
+
+.header_lista_rep .btn_menu {
+    height: 25px;
+    width: 35px;
+    margin-right: 40px;
+    margin-top: -70px;
+}
+
+.main_playlist {
+    width: 100%;
+    background-image: url("../img/fundos_bordas/bandai_borda_inferior.png");
+    background-position-y: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    z-index: 10;
+    position: relative;
+    margin-top: -70px;
+}
+
+.segura_img {
+    width: 30%;
+    height: auto;
+    margin-top: 100px;
+}
+
+#playlist_geral{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#playlist_geral h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 70px;
+    line-height: 1;
+    color: #FFFFFF;
+    font-weight: 100;
+}
+
+#playlist_geral p {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+#playlist_geral iframe {
+    width: 90%;
+    min-height: 400px;
+    height: auto;
+}
+
+.p_img_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p_img_lado {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.segura_img img {
+    height: 230px;
+}
+
+.icons_bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 150px;
+    width: 60%;
+
+    margin-bottom: 30px;
+}
+
+.icons_bottom img {
+    height: 40px;
+}
+
+@media (min-width: 1025px) and (max-width: 1460px) {
+    #playlist_geral {
+        width: 35%;
+    }
+
+    #playlist_geral h1 {
+        text-align: center;
+    }
+
+    .segura_img img {
+        height: 195px;
+    }
+}
 
 
 /************************************

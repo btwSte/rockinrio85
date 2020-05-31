@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="favico/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favico/favicon-16x16.png">
+        <link rel="manifest" href="favico/site.webmanifest">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/simpleLightbox.min.css">
+
+        <script src="js/simpleLightbox.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <title>Queen - RIR85</title>
+    </head>
+    <body class="detalhe_body">
+        <header>
+            <div class="header_detalhe">
+                <!-- Logo -->
+                <div id="segura_logo">
+                    <a href="index.html">
+                        <div id="logo" class="desk-none">
+                            <img src="img/logo/hard_rock_mobile.png" alt="Logo">
+                        </div>
+                        <div id="logo" class="mob-none">
+                            <img src="img/logo/hard_rock.png" alt="Logo">
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- menu -->
+                <a href="#" class="btn_menu"> 
+                    <img src="img/icones/icon_menu.png" alt="Menu">
+                </a>
+                
+                <nav class="menu">
+                    <div>
+                        <a class="btn_close">
+                            <img src="img/icones/icon_fechar.png" alt="Fechar" title="Fechar">
+                        </a>
+                    </div>
+                    
+                    <div class="links_menu">
+                        <ul>
+                            <li><a href="historia.html">História</a></li>
+                            <li><a href="bandas.html">Bandas</a></li>
+                            <li><a href="curiosidades.html">Curiosidades</a></li>
+                            <li><a href="galeria_fotos.html">Galeria de Fotos</a></li>
+                            <li><a href="quem_somos.html">Quem Somos</a></li>
+                        </ul>
+                    </div>
+                </nav>   
+            </div>
+        </header>
+        <main>
+            <div class="segura_info_detalhe">
+                <h1>Queen</h1>
+                <div class="segura_img_txt_detalhes">
+                    <div>
+                        <img src="img/artistas/bandai_queen.png" alt="Iron">
+                    </div>
+        
+                    <div class="detalhe_txt">
+                        <p>Se apresentaram nos dias 11 e 18 de janeiro do ano de 1985, o Rock in Rio em sua primeira edição teve a honra de receber uma das maiores bandas de rock da história. Logo em seu primeiro dia, o festival recebeu mais de 300 mil pessoas como público, recorde que até hoje não foi batido. A apresentação é considerada até os dias de hoje como uma das mais icônicas da história. Como exigência, Freddie Mercury pediu que o corredor que dava acesso ao palco estivesse vazio quando ele passasse, assim, todos os outros artistas tiveram que ficar em seus camarins durante a passagem do cantor. Assim que o show já havia começado, o país e a banda puderam presenciar um dos momentos mais marcantes durante o festival, quando a música "Love of My Life" foi cantada em coro por milhares de fãs. Brian May, guitarrista do Queen, disse que esse momento foi o mais marcante para a banda.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="img_detalhe_slide">
+                <a href="img/artistas/QUEEN_01.jpg">
+                    <img src="img/artistas/QUEEN_01.jpg" alt="Imagens do Show">
+                </a>
+                <a href="img/artistas/QUEEN_02.jpg">
+                    <img src="img/artistas/QUEEN_02.jpg" alt="Imagens do Show">
+                </a>
+                <a href="img/artistas/QUEEN_03.jpg">
+                    <img src="img/artistas/QUEEN_03.jpg" alt="Imagens do Show">
+                </a>
+                <a href="img/artistas/QUEEN_04.jpg">
+                    <img src="img/artistas/QUEEN_04.jpg" alt="Imagens do Show">
+                </a>
+
+            </div>
+            <div class="segura_lista_detalhe">
+                <h2>Lista de Reprodução</h2>
+                <iframe src="https://open.spotify.com/embed/playlist/6Rj4mfYdY3jyoRfk3bWDWe" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </main>
+
+        <script>
+            // Abrir e fechar menu 
+            $(".btn_menu").click(function() {
+                $(".menu").show();
+            });
+
+            $(".btn_close").click(function() {
+                $(".menu").hide();
+            });
+
+            // Lightbox
+            new SimpleLightbox({elements: '.img_detalhe_slide a'});
+        </script>
+    </body>
+</html>

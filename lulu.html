@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="favico/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favico/favicon-16x16.png">
+        <link rel="manifest" href="favico/site.webmanifest">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/simpleLightbox.min.css">
+
+        <script src="js/simpleLightbox.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <title>Lulu Santos - RIR85</title>
+    </head>
+    <body class="detalhe_body">
+        <header>
+            <div class="header_detalhe">
+                <!-- Logo -->
+                <div id="segura_logo">
+                    <a href="index.html">
+                        <div id="logo" class="desk-none">
+                            <img src="img/logo/rock_nacional_mobile.png" alt="Logo">
+                        </div>
+                        <div id="logo" class="mob-none">
+                            <img src="img/logo/rock_nacional.png" alt="Logo">
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- menu -->
+                <a href="#" class="btn_menu"> 
+                    <img src="img/icones/icon_menu.png" alt="Menu">
+                </a>
+                
+                <nav class="menu">
+                    <div>
+                        <a class="btn_close">
+                            <img src="img/icones/icon_fechar.png" alt="Fechar" title="Fechar">
+                        </a>
+                    </div>
+                    
+                    <div class="links_menu">
+                        <ul>
+                            <li><a href="historia.html">História</a></li>
+                            <li><a href="bandas.html">Bandas</a></li>
+                            <li><a href="curiosidades.html">Curiosidades</a></li>
+                            <li><a href="galeria_fotos.html">Galeria de Fotos</a></li>
+                            <li><a href="quem_somos.html">Quem Somos</a></li>
+                        </ul>
+                    </div>
+                </nav>   
+            </div>
+        </header>
+        <main>
+            <div class="segura_info_detalhe">
+                <h1>Lulu Santos</h1>
+                <div class="segura_img_txt_detalhes">
+                    <div>
+                        <img src="img/artistas/bandai_lulu_santos.png" alt="Iron">
+                    </div>
+        
+                    <div class="detalhe_txt">
+                        <p>Lulu Santos criou sua primeira banda aos 12 anos inspirada nos Beatles. Após grandes sucessos seguindo carreira solo, foi convidado a subir nos palcos da primeira edição do Rock in Rio, em 1985. Suas apresentações aconteceram nos dias 13 e 18 de janeiro, sendo elas consideradas dois memoráveis shows. Contudo, 30 anos depois, o cantor afirmou no programa Legendários da Record, na edição do dia 22/08/2015, que não tem boas lembranças da época. De acordo com o próprio Lulu Santos, ele não fez uma boa apresentação no primeiro dia, e isso o deixou deprimido por seis meses, mas que aquilo o motivou a querer correr atrás de melhores resultados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="img_detalhe_slide">
+                <a href="img/artistas/LULU_01.jpg">
+                    <img src="img/artistas/LULU_01.jpg" alt="Imagens do Show">
+                </a>
+                <a href="img/artistas/LULU_02.jpg">
+                    <img src="img/artistas/LULU_02.jpg" alt="Imagens do Show">
+                </a>
+                <a href="img/artistas/LULU_03.jpg">
+                    <img src="img/artistas/LULU_03.jpg" alt="Imagens do Show">
+                </a>
+                <a href="img/artistas/LULU_04.jpg">
+                    <img src="img/artistas/LULU_04.jpg" alt="Imagens do Show">
+                </a>
+
+            </div>
+            <div class="segura_lista_detalhe">
+                <h2>Lista de Reprodução</h2>
+                <iframe src="https://open.spotify.com/embed/playlist/3PAktDmXFeIv4zhZsM5DDE" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </main>
+
+        <script>
+            // Abrir e fechar menu 
+            $(".btn_menu").click(function() {
+                $(".menu").show();
+            });
+
+            $(".btn_close").click(function() {
+                $(".menu").hide();
+            });
+
+            // Lightbox
+            new SimpleLightbox({elements: '.img_detalhe_slide a'});
+        </script>
+    </body>
+</html>

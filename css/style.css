@@ -10,6 +10,11 @@ body {
     font-family: "Roboto", 'Times New Roman';
 }
 
+p {
+    font-size: 18px;
+}
+
+
 
 
 /* ---------------------------
@@ -311,6 +316,7 @@ footer {
     width: 70%;
     text-align: center;
     color: #242663;
+    font-size: 18px;
 }
 
 .home_tit_inicio_tudo a{
@@ -364,7 +370,7 @@ footer {
 
 .txt_teste p {
     font-style: italic;
-    font-size: 20px;
+    font-size: 18px;
     color: #FFFFFF;
     text-shadow: 1px 1px 5px rgba(2, 0, 0, 1);
     margin-top: -10px;
@@ -435,6 +441,7 @@ footer {
 
 .conteudo_historia p {
     margin-top: 30px;
+    font-size: 18px;
 }
 
 .conteudo_historia img {
@@ -515,6 +522,7 @@ footer {
 
 .textos_curiosidades p {
     margin: 40px 0;
+    font-size: 18px;
 }
 
 .textos_curiosidades img {
@@ -758,7 +766,7 @@ footer {
 
 #playlist_geral p {
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 30px;
 }
 
@@ -798,6 +806,125 @@ footer {
 .icons_bottom img {
     height: 40px;
 }
+
+
+
+
+/* ---------------------------
+- Bandas Detalhes Desktop
+-----------------------------*/
+.detalhe_body {
+    background-image: url("../img/fundos_bordas/fundo_cinza.jpg");
+}
+
+.header_detalhe {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.segura_info_detalhe {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/fundos_bordas/bandai_borda_inferior.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}
+
+.segura_info_detalhe h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    line-height: 1;
+    font-weight: 100;
+    margin: 75px 0 20px 0;
+}
+
+.segura_img_txt_detalhes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+}
+
+.detalhe_txt {
+    width: 50%;
+}
+
+.detalhe_txt p {
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 15px;
+    line-height: 1.5;
+}
+
+.segura_img_txt_detalhes img {
+    height: 400px;
+}
+
+.img_detalhe_slide {
+    overflow: hidden;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 2px 0;
+}
+
+.img_detalhe_slide a{
+    float: left; 
+    width: 25%; 
+    padding: 2px;
+    box-sizing: border-box; 
+    position: relative;
+}
+
+.img_detalhe_slide > a:first-child { left: -1px; }
+.img_detalhe_slide > a:last-child { right: -1px; }
+
+.img_detalhe_slide > a > img {
+    display: block; 
+    width: 100%;
+}
+
+.slbOverlay {
+    background-color: rgba(67, 48, 107, 0.8);
+}
+
+.segura_lista_detalhe {
+    background-image: url("../img/fundos_bordas/bandai_borda_superior.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: #FFFFFF;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+    height: auto;
+
+    margin-bottom: 100px;
+}
+
+.segura_lista_detalhe h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 100;
+    margin: 75px 0 20px 0;
+}
+
+.segura_lista_detalhe iframe {
+    margin-top: 30px;
+    width: 60%;
+    height: 300px;
+}
+
+
+
 
 @media (min-width: 1025px) and (max-width: 1460px) {
     #playlist_geral {
@@ -981,6 +1108,10 @@ footer {
     -----------------------------*/
     #playlist_geral h1 {
         font-size: 60px;
+    }
+
+    .segura_img_txt_detalhes img {
+        height: 350px;
     }
 }
 
@@ -1224,6 +1355,37 @@ footer {
         width: 70%;
     }
 
+    /* ---------------------------
+    - Banda Detalhe Tablet
+    -----------------------------*/
+    .header_detalhe #logo img {
+        width: 125px;
+        height: 125px;
+    }
+
+    .header_detalhe #logo {
+        width: auto; 
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .header_detalhe #segura_logo {
+        margin-left: 40px;
+        margin-top: -35px;
+    }
+
+    #segura_lista_detalhe iframe {
+        width: 70%;
+    }
+
+    .segura_img_txt_detalhes {
+        flex-wrap: wrap;
+    }
+
+    .detalhe_txt {
+        width: 80%;
+    }
+
 }
 
 /************************************
@@ -1234,6 +1396,10 @@ footer {
     ##Screen = B/w 481px to 767px
 */
 @media (min-width: 481px) and (max-width: 767px) {
+    p {
+        font-size: 16px;
+    }
+
     .btn_close{
         margin: 2% 0 0 10%;
     }
@@ -1437,6 +1603,27 @@ footer {
         font-size: 40px;
     }
 
+    .img_detalhe_slide > a {
+        float: left; 
+        width: 50%; 
+        padding: 2px;
+        box-sizing: border-box; 
+        position: relative;
+    }
+
+    .segura_img_txt_detalhes {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .detalhe_txt {
+        width: 90%;
+    }
+
+    .segura_img_txt_detalhes img {
+        height: 350px;
+    }
+
 
 
     /* ---------------------------
@@ -1494,6 +1681,10 @@ footer {
     ##Screen = B/w 320px to 479px
 */
 @media (min-width: 320px) and (max-width: 480px) {
+    p {
+        font-size: 16px;
+    }
+
     .btn_close{
         margin: 2% 0 0 0;
     }
@@ -1706,52 +1897,31 @@ footer {
     /* ---------------------------
     - Banda Detalhe Desktop
     -----------------------------*/
-    .segura_info {
-        display: flex;
-        flex-direction: column;
-
-        background-image: url("../img/fundos_bordas/bandai_borda_inferior.png");
-        background-position-x: center;
+    .segura_lista_detalhe h2 {
+        font-size: 26px;
     }
 
-    .segura_info h1 {
-        text-align: center;
-        margin: 75px 0 20px 0;
-        padding: 15px;
-        color: #FFFFFF;
-        letter-spacing: 2px;
-        font-size: 70px;
-        font-weight: normal;
+    .header_detalhe #logo img {
+        width: 125px;
+        height: 125px;
     }
 
-    .segura_img_txt {
-        width: 60%;
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: space-around;
-        text-align: center;
-        align-items: center;
-        /* background-color: coral; */
-        padding: 0 0 30px 0;
+    .header_detalhe #logo {
+        width: auto; 
+        height: auto;
+        margin-bottom: 0;
     }
 
-    .segura_img_txt  img {
-        width: 30%;
-        /* background-color: crimson; */
+    .header_detalhe #segura_logo {
+        margin-left: 40px;
+        margin-top: -35px;
     }
 
-    .segura_img_txt  p {
-        font-family: 'Roboto', sans-serif;
-        font-size: 30px;
-        width: 50%;
-        color: #FFFFFF;
-        /* background-color: darkgrey; */
-
-        padding: 15px;
-
-        font-weight: 100;
+    #segura_lista_detalhe iframe {
+        width: 90%;
+        margin-top: 20px;
     }
+
 
     /* ---------------------------
     - Curiosidades Mobile
@@ -1823,6 +1993,29 @@ footer {
     .imageGallery1 > a {
         width: 50%; 
     }
+
+    .img_detalhe_slide > a {
+        width: 50%; 
+    }
+
+
+    .segura_img_txt_detalhes {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .detalhe_txt {
+        width: 90%;
+    }
+
+    .segura_img_txt_detalhes img {
+        height: 230px;
+    }
+
+    .segura_lista_detalhe iframe {
+        width: 80%;
+    }
+
 
     @media (max-width: 367px) {
         .fundo_txt_ini_tudo p {

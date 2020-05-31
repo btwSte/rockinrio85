@@ -352,9 +352,6 @@ footer {
 
 #home_sob_festival h2 {
     font-family: 'Bebas Neue', cursive;
-    font-size: 80px;
-    line-height: 1;
-    font-family: 'Bebas Neue', cursive;
     font-size: 80px; 
     color: #242663;
     line-height: 1;
@@ -431,16 +428,24 @@ footer {
     text-align: center;
 }
 
-.conteudo_historia h1 {
+.titulo_hist h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 80px;
     line-height: 1;
-    font-weight: 100;
+    padding: 10px 0;
+    color: #242663;
+    /* width: 60%; */
+    background-image: url('../img/fundos_bordas/fundo_titulo_v1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
 }
 
 .conteudo_historia p {
     margin-top: 30px;
     font-size: 18px;
+    text-shadow: 1px 1px 5px rgba(2, 0, 0, 1);
 }
 
 .conteudo_historia img {
@@ -451,6 +456,7 @@ footer {
 .conteudo_historia figcaption {
     text-align: center;
     margin-top: -30px;
+    text-shadow: 1px 1px 5px rgba(2, 0, 0, 1);
 }
 
 .espaco_footer {
@@ -1665,6 +1671,11 @@ footer {
         text-align: center;
         font-size: 43px;
     }
+
+
+    .titulo_hist h1 {
+        font-size: 43px;
+    }
 }
   
 /* 
@@ -2004,6 +2015,11 @@ footer {
 
     .segura_lista_detalhe iframe {
         width: 80%;
+    }
+
+    .titulo_hist h1 {
+        padding: 12px 3px;
+        font-size: 26px;
     }
 
 

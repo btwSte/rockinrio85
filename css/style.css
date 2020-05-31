@@ -1131,7 +1131,7 @@ footer {
 */
 
   
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) { 
     .btn_close{
         margin: 2% 0 0 30%;
     }
@@ -1759,9 +1759,9 @@ footer {
     }
 
     .fundo_txt_ini_tudo {
-        width: 100%;
+        width: 96%;
         order: 1;
-        padding: 15px;
+        padding: 53px;
         height: 343px;
         background-size: contain;
         background-image: url("../img/fundos_bordas/home_fundo_texto_mobile.png");

@@ -208,7 +208,6 @@ footer {
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: bottom;
-    margin-top: -23px;
     position: relative;
     z-index: 99;
 }
@@ -413,7 +412,7 @@ footer {
 .borda_historia {
     width: 80%;
     height: 100%;
-    background-image: url("../img/fundos_bordas/borda_vertical_v2.png");
+    /* background-image: url("../img/fundos_bordas/borda_vertical_v2.png"); */
     background-size: contain;
     background-position: top;
     display: flex;
@@ -994,7 +993,6 @@ footer {
 
     #borda_central_inferior {
         height: 120px;
-        margin-top: -6px;
     }
 
     .home_tit_inicio_tudo {
@@ -1172,14 +1170,8 @@ footer {
         margin-top: -48px;
     }
 
-    #borda_central_superior {
-        height: 70px;
-        margin-top: -68px;
-    }
-
     #borda_central_inferior {
         height: 120px;
-        margin-top: -6px;
     }
 
     .home_tit_inicio_tudo {
@@ -1452,7 +1444,6 @@ footer {
 
     #borda_central_inferior {
         height: 80px;
-        margin-top: -6px;
         background-image: url("../img/fundos_bordas/borda_horizontal_superior_home_mobile.png");
     }
 
@@ -1736,7 +1727,6 @@ footer {
 
     #borda_central_inferior {
         height: 80px;
-        margin-top: -4px;
         background-image: url("../img/fundos_bordas/borda_horizontal_superior_home_mobile.png");
     }
 
@@ -1865,7 +1855,7 @@ footer {
 
     .main_playlist {
         flex-wrap: wrap;
-        margin-top: -148px;
+        margin-top: -116px;
     }
 
     .segura_img {

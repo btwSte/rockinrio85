@@ -394,7 +394,8 @@ footer {
 -----------------------------*/
 #main_historia {
     background-image: url("../img/fundos_bordas/fundo_2.png");
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
     margin-top: -180px;
     width: 100%;
     height: auto;

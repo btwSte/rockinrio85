@@ -547,10 +547,20 @@ footer {
 /* ---------------------------
 - Menu Desktop
 -----------------------------*/
+.header_qs {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    position: relative;
+}
+
 #main_qm_somos {
-    background-image: url("../img/fundos_bordas/fundo_cinza.jpg");
+    background-image: url("../img/fundos_bordas/fundo_pixelado.jpg");
     background-size: cover;
-    margin-top: -180px;
+    margin-top: -200px;
     width: 100%;
     height: auto;
     display: flex;
@@ -979,6 +989,14 @@ footer {
         height: 150px;
     }
 
+    .header_qs {
+        height: 150px;
+    }
+
+    #main_qm_somos {
+        margin-top: -220px;
+    }
+
     #segura_logo {
         margin-top: 0;
     }
@@ -1152,6 +1170,14 @@ footer {
     .header_home {
         height: 110px;
         background-image: url("../img/fundos_bordas/borda_header_home_mobile.png");
+    }
+
+    .header_qs {
+        height: 110px;
+    }
+
+    #main_qm_somos {
+        margin-top: -250px;
     }
 
     .btn_menu {
@@ -1421,6 +1447,14 @@ footer {
         background-image: url("../img/fundos_bordas/borda_header_home_mobile.png");
 
         height: 110px;
+    }
+
+    .header_qs {
+        height: 110px;
+    }
+
+    #main_qm_somos {
+        margin-top: -250px;
     }
 
     .btn_menu {
@@ -1709,6 +1743,14 @@ footer {
     .header_home{
         background-image: url("../img/fundos_bordas/borda_header_home_mobile.png");
         height: 100px;
+    }
+
+    .header_qs {
+        height: 100px;
+    }
+
+    #main_qm_somos {
+        margin-top: -270px;
     }
 
     .btn_menu {

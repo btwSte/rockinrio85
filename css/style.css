@@ -470,8 +470,9 @@ footer {
 - Curiosidades Desktop
 -----------------------------*/
 #main_curiosidades {
-    background-image: url("../img/fundos_bordas/fundo_cinza.jpg");
-    background-size: cover;
+    background-image: url("../img/fundos_bordas/fundo_2.png");
+    background-size: contain;
+    background-position: center;
     margin-top: -180px;
     width: 100%;
     height: auto;

@@ -9,9 +9,11 @@
         <link rel="icon" type="image/png" sizes="16x16" href="favico/favicon-16x16.png">
         <link rel="manifest" href="favico/site.webmanifest">
 
+        <link rel="stylesheet" href="css/plyr.css"/> 
         <link rel="stylesheet" href="css/style.css">
         
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="js/plyr.js"></script>
 
         <title>Rock In Rio 85</title>
     </head>
@@ -57,18 +59,24 @@
         
         <main>
             <div id="container_video" class="mob-none">
-                <video controls>
-                    <source src="https://rir85.s3-sa-east-1.amazonaws.com/ROCKINRIO85_V01.mp4" type="video/mp4">
+                <video id="player" playsinline controls data-poster="img/logo/principal.png">
+                    <source src="https://rir85.s3-sa-east-1.amazonaws.com/ROCKINRIO85_V01.mp4" type="video/mp4" />
                     Seu navegador não suporta vídeos.
-                </video>
+                  </video>
             </div>
-                
+            
             <div id="container_video" class="desk-none">
+                <video id="player" playsinline controls data-poster="img/logo/principal.png">
+                    <source src="https://rir85.s3-sa-east-1.amazonaws.com/ROCKINRIO85_MOBILE_V01.mp4" type="video/mp4" />
+                    Seu navegador não suporta vídeos.
+                  </video>
+            </div>
+            <!-- <div id="container_video" class="desk-none">
                 <video controls>
                     <source src="https://rir85.s3-sa-east-1.amazonaws.com/ROCKINRIO85_MOBILE_V01.mp4" type="video/mp4">
                     Seu navegador não suporta vídeos.
                 </video>
-            </div>
+            </div> -->
             
             <div id="borda_central_inferior"></div>
                     
@@ -148,6 +156,25 @@
             $(".btn_close").click(function() {
                 $(".menu").hide();
             });
+
+
+            const players = Array.from(document.querySelectorAll('#player'));
+	
+		    players.map(player => new Plyr(player, {
+				
+			    debug:true,
+		        autoplay: false
+	        }));
+	
+            players.forEach(function(player) {
+	  
+                window.addEventListener("load", function() {
+
+		        //player.pause();
+                setTimeout(() => { player.pause() }, 10);
+	    
+		        })
+	        });
         </script>
     </body>
 </html>

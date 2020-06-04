@@ -562,6 +562,7 @@ footer {
 #main_qm_somos {
     background-image: url("../img/fundos_bordas/fundo_pixelado.jpg");
     background-size: cover;
+    background-position: center;
     margin-top: -200px;
     width: 100%;
     height: auto;
@@ -575,10 +576,9 @@ footer {
 
 .quem_somos_itens {
     margin-top: 200px;
-    background-image: url("../img/fundos_bordas/borda_horizontal.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("../img/fundos_bordas/fundo_2.png");
     background-position: center;
+    background-size: cover;
     width: 100%;
     min-height: 1000px;
     height: auto;
@@ -982,6 +982,10 @@ footer {
         width: 60%;
     }
 
+    .quem_somos_itens {
+        background-size: contain;
+    }
+
 
 
     /* ---------------------------
@@ -1164,6 +1168,10 @@ footer {
         font-size: 60px;
     }
 
+    .quem_somos_itens {
+        background-size: contain;
+    }
+
 
 
     /* ---------------------------
@@ -1179,7 +1187,7 @@ footer {
     }
 
     #main_qm_somos {
-        margin-top: -250px;
+        margin-top: -230px;
     }
 
     .btn_menu {
@@ -1422,6 +1430,10 @@ footer {
     ##Screen = B/w 481px to 767px
 */
 @media (min-width: 481px) and (max-width: 767px) {
+    .quem_somos_itens {
+        background-size: contain;
+    }
+
     p {
         font-size: 16px;
     }
@@ -1719,6 +1731,10 @@ footer {
     ##Screen = B/w 320px to 479px
 */
 @media (min-width: 320px) and (max-width: 480px) {
+    .quem_somos_itens {
+        background-size: contain;
+    }
+
     p {
         font-size: 16px;
     }

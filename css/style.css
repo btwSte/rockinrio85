@@ -14,7 +14,17 @@ p {
     font-size: 18px;
 }
 
+.p_img_center a {
+    text-decoration: none;
+}
 
+a .banda_nome {
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+}
 
 
 /* ---------------------------
